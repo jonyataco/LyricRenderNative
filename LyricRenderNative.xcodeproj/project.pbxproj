@@ -46,6 +46,7 @@
 		AB20443026018D7E0011AE9C /* LyricRenderNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricRenderNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricRenderNativeUITests.swift; sourceTree = "<group>"; };
 		AB20443626018D7E0011AE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB20444626018FA70011AE9C /* COURIER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COURIER.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +97,7 @@
 		AB20441526018D7E0011AE9C /* LyricRenderNative */ = {
 			isa = PBXGroup;
 			children = (
+				AB20444526018F880011AE9C /* Fonts */,
 				AB20441626018D7E0011AE9C /* LyricRenderNativeApp.swift */,
 				AB20441826018D7E0011AE9C /* ContentView.swift */,
 				AB20441A26018D7E0011AE9C /* Assets.xcassets */,
@@ -130,6 +132,14 @@
 				AB20443626018D7E0011AE9C /* Info.plist */,
 			);
 			path = LyricRenderNativeUITests;
+			sourceTree = "<group>";
+		};
+		AB20444526018F880011AE9C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AB20444626018FA70011AE9C /* COURIER.TTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
