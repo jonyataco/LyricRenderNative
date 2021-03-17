@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB20441726018D7E0011AE9C /* LyricRenderNativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20441626018D7E0011AE9C /* LyricRenderNativeApp.swift */; };
+		AB20441926018D7E0011AE9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20441826018D7E0011AE9C /* ContentView.swift */; };
+		AB20441B26018D7E0011AE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB20441A26018D7E0011AE9C /* Assets.xcassets */; };
+		AB20441E26018D7E0011AE9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB20441D26018D7E0011AE9C /* Preview Assets.xcassets */; };
+		AB20442A26018D7E0011AE9C /* LyricRenderNativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20442926018D7E0011AE9C /* LyricRenderNativeTests.swift */; };
+		AB20443526018D7E0011AE9C /* LyricRenderNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB20442626018D7E0011AE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB20440B26018D7D0011AE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB20441226018D7D0011AE9C;
+			remoteInfo = LyricRenderNative;
+		};
+		AB20443126018D7E0011AE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB20440B26018D7D0011AE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB20441226018D7D0011AE9C;
+			remoteInfo = LyricRenderNative;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB20441326018D7E0011AE9C /* LyricRenderNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricRenderNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB20441626018D7E0011AE9C /* LyricRenderNativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricRenderNativeApp.swift; sourceTree = "<group>"; };
+		AB20441826018D7E0011AE9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB20441A26018D7E0011AE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB20441D26018D7E0011AE9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB20441F26018D7E0011AE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB20442026018D7E0011AE9C /* LyricRenderNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LyricRenderNative.entitlements; sourceTree = "<group>"; };
+		AB20442526018D7E0011AE9C /* LyricRenderNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricRenderNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB20442926018D7E0011AE9C /* LyricRenderNativeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricRenderNativeTests.swift; sourceTree = "<group>"; };
+		AB20442B26018D7E0011AE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB20443026018D7E0011AE9C /* LyricRenderNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricRenderNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricRenderNativeUITests.swift; sourceTree = "<group>"; };
+		AB20443626018D7E0011AE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB20441026018D7D0011AE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB20442226018D7E0011AE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB20442D26018D7E0011AE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB20440A26018D7D0011AE9C = {
+			isa = PBXGroup;
+			children = (
+				AB20441526018D7E0011AE9C /* LyricRenderNative */,
+				AB20442826018D7E0011AE9C /* LyricRenderNativeTests */,
+				AB20443326018D7E0011AE9C /* LyricRenderNativeUITests */,
+				AB20441426018D7E0011AE9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB20441426018D7E0011AE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB20441326018D7E0011AE9C /* LyricRenderNative.app */,
+				AB20442526018D7E0011AE9C /* LyricRenderNativeTests.xctest */,
+				AB20443026018D7E0011AE9C /* LyricRenderNativeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB20441526018D7E0011AE9C /* LyricRenderNative */ = {
+			isa = PBXGroup;
+			children = (
+				AB20441626018D7E0011AE9C /* LyricRenderNativeApp.swift */,
+				AB20441826018D7E0011AE9C /* ContentView.swift */,
+				AB20441A26018D7E0011AE9C /* Assets.xcassets */,
+				AB20441F26018D7E0011AE9C /* Info.plist */,
+				AB20442026018D7E0011AE9C /* LyricRenderNative.entitlements */,
+				AB20441C26018D7E0011AE9C /* Preview Content */,
+			);
+			path = LyricRenderNative;
+			sourceTree = "<group>";
+		};
+		AB20441C26018D7E0011AE9C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB20441D26018D7E0011AE9C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB20442826018D7E0011AE9C /* LyricRenderNativeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB20442926018D7E0011AE9C /* LyricRenderNativeTests.swift */,
+				AB20442B26018D7E0011AE9C /* Info.plist */,
+			);
+			path = LyricRenderNativeTests;
+			sourceTree = "<group>";
+		};
+		AB20443326018D7E0011AE9C /* LyricRenderNativeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */,
+				AB20443626018D7E0011AE9C /* Info.plist */,
+			);
+			path = LyricRenderNativeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB20441226018D7D0011AE9C /* LyricRenderNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB20443926018D7E0011AE9C /* Build configuration list for PBXNativeTarget "LyricRenderNative" */;
+			buildPhases = (
+				AB20440F26018D7D0011AE9C /* Sources */,
+				AB20441026018D7D0011AE9C /* Frameworks */,
+				AB20441126018D7D0011AE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyricRenderNative;
+			productName = LyricRenderNative;
+			productReference = AB20441326018D7E0011AE9C /* LyricRenderNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB20442426018D7E0011AE9C /* LyricRenderNativeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB20443C26018D7E0011AE9C /* Build configuration list for PBXNativeTarget "LyricRenderNativeTests" */;
+			buildPhases = (
+				AB20442126018D7E0011AE9C /* Sources */,
+				AB20442226018D7E0011AE9C /* Frameworks */,
+				AB20442326018D7E0011AE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB20442726018D7E0011AE9C /* PBXTargetDependency */,
+			);
+			name = LyricRenderNativeTests;
+			productName = LyricRenderNativeTests;
+			productReference = AB20442526018D7E0011AE9C /* LyricRenderNativeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB20442F26018D7E0011AE9C /* LyricRenderNativeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB20443F26018D7E0011AE9C /* Build configuration list for PBXNativeTarget "LyricRenderNativeUITests" */;
+			buildPhases = (
+				AB20442C26018D7E0011AE9C /* Sources */,
+				AB20442D26018D7E0011AE9C /* Frameworks */,
+				AB20442E26018D7E0011AE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB20443226018D7E0011AE9C /* PBXTargetDependency */,
+			);
+			name = LyricRenderNativeUITests;
+			productName = LyricRenderNativeUITests;
+			productReference = AB20443026018D7E0011AE9C /* LyricRenderNativeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB20440B26018D7D0011AE9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AB20441226018D7D0011AE9C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AB20442426018D7E0011AE9C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AB20441226018D7D0011AE9C;
+					};
+					AB20442F26018D7E0011AE9C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AB20441226018D7D0011AE9C;
+					};
+				};
+			};
+			buildConfigurationList = AB20440E26018D7D0011AE9C /* Build configuration list for PBXProject "LyricRenderNative" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB20440A26018D7D0011AE9C;
+			productRefGroup = AB20441426018D7E0011AE9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB20441226018D7D0011AE9C /* LyricRenderNative */,
+				AB20442426018D7E0011AE9C /* LyricRenderNativeTests */,
+				AB20442F26018D7E0011AE9C /* LyricRenderNativeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB20441126018D7D0011AE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20441E26018D7E0011AE9C /* Preview Assets.xcassets in Resources */,
+				AB20441B26018D7E0011AE9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB20442326018D7E0011AE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB20442E26018D7E0011AE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB20440F26018D7D0011AE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20441926018D7E0011AE9C /* ContentView.swift in Sources */,
+				AB20441726018D7E0011AE9C /* LyricRenderNativeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB20442126018D7E0011AE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20442A26018D7E0011AE9C /* LyricRenderNativeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB20442C26018D7E0011AE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB20443526018D7E0011AE9C /* LyricRenderNativeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB20442726018D7E0011AE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB20441226018D7D0011AE9C /* LyricRenderNative */;
+			targetProxy = AB20442626018D7E0011AE9C /* PBXContainerItemProxy */;
+		};
+		AB20443226018D7E0011AE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB20441226018D7D0011AE9C /* LyricRenderNative */;
+			targetProxy = AB20443126018D7E0011AE9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB20443726018D7E0011AE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB20443826018D7E0011AE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AB20443A26018D7E0011AE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LyricRenderNative/LyricRenderNative.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"LyricRenderNative/Preview Content\"";
+				DEVELOPMENT_TEAM = 4W9U25F9BB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LyricRenderNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JonYataco.LyricRenderNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB20443B26018D7E0011AE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LyricRenderNative/LyricRenderNative.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"LyricRenderNative/Preview Content\"";
+				DEVELOPMENT_TEAM = 4W9U25F9BB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = LyricRenderNative/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JonYataco.LyricRenderNative;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AB20443D26018D7E0011AE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4W9U25F9BB;
+				INFOPLIST_FILE = LyricRenderNativeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JonYataco.LyricRenderNativeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LyricRenderNative.app/Contents/MacOS/LyricRenderNative";
+			};
+			name = Debug;
+		};
+		AB20443E26018D7E0011AE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4W9U25F9BB;
+				INFOPLIST_FILE = LyricRenderNativeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JonYataco.LyricRenderNativeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LyricRenderNative.app/Contents/MacOS/LyricRenderNative";
+			};
+			name = Release;
+		};
+		AB20444026018D7E0011AE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4W9U25F9BB;
+				INFOPLIST_FILE = LyricRenderNativeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JonYataco.LyricRenderNativeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LyricRenderNative;
+			};
+			name = Debug;
+		};
+		AB20444126018D7E0011AE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4W9U25F9BB;
+				INFOPLIST_FILE = LyricRenderNativeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JonYataco.LyricRenderNativeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LyricRenderNative;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB20440E26018D7D0011AE9C /* Build configuration list for PBXProject "LyricRenderNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20443726018D7E0011AE9C /* Debug */,
+				AB20443826018D7E0011AE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB20443926018D7E0011AE9C /* Build configuration list for PBXNativeTarget "LyricRenderNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20443A26018D7E0011AE9C /* Debug */,
+				AB20443B26018D7E0011AE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB20443C26018D7E0011AE9C /* Build configuration list for PBXNativeTarget "LyricRenderNativeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20443D26018D7E0011AE9C /* Debug */,
+				AB20443E26018D7E0011AE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB20443F26018D7E0011AE9C /* Build configuration list for PBXNativeTarget "LyricRenderNativeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB20444026018D7E0011AE9C /* Debug */,
+				AB20444126018D7E0011AE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB20440B26018D7D0011AE9C /* Project object */;
+}
