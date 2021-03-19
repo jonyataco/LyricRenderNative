@@ -13,6 +13,10 @@
 		AB20441E26018D7E0011AE9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB20441D26018D7E0011AE9C /* Preview Assets.xcassets */; };
 		AB20442A26018D7E0011AE9C /* LyricRenderNativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20442926018D7E0011AE9C /* LyricRenderNativeTests.swift */; };
 		AB20443526018D7E0011AE9C /* LyricRenderNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */; };
+		AB20444C260190E00011AE9C /* Lyric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20444B260190E00011AE9C /* Lyric.swift */; };
+		AB204451260190F30011AE9C /* LyricTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB204450260190F30011AE9C /* LyricTextView.swift */; };
+		ABE86BF8260404120038009E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE86BF7260404120038009E /* File.swift */; };
+		ABE86BFE26040C4A0038009E /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE86BFD26040C4A0038009E /* ColorExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricRenderNativeUITests.swift; sourceTree = "<group>"; };
 		AB20443626018D7E0011AE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB20444626018FA70011AE9C /* COURIER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COURIER.TTF; sourceTree = "<group>"; };
+		AB20444B260190E00011AE9C /* Lyric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyric.swift; sourceTree = "<group>"; };
+		AB204450260190F30011AE9C /* LyricTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricTextView.swift; sourceTree = "<group>"; };
+		ABE86BF7260404120038009E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		ABE86BFD26040C4A0038009E /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,11 @@
 		AB20441526018D7E0011AE9C /* LyricRenderNative */ = {
 			isa = PBXGroup;
 			children = (
+				ABE86BFC26040C3C0038009E /* Extensions */,
+				AB204455260190F80011AE9C /* Views */,
+				AB20444A260190CA0011AE9C /* Models */,
 				AB20444526018F880011AE9C /* Fonts */,
 				AB20441626018D7E0011AE9C /* LyricRenderNativeApp.swift */,
-				AB20441826018D7E0011AE9C /* ContentView.swift */,
 				AB20441A26018D7E0011AE9C /* Assets.xcassets */,
 				AB20441F26018D7E0011AE9C /* Info.plist */,
 				AB20442026018D7E0011AE9C /* LyricRenderNative.entitlements */,
@@ -140,6 +150,32 @@
 				AB20444626018FA70011AE9C /* COURIER.TTF */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AB20444A260190CA0011AE9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB20444B260190E00011AE9C /* Lyric.swift */,
+				ABE86BF7260404120038009E /* File.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB204455260190F80011AE9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB20441826018D7E0011AE9C /* ContentView.swift */,
+				AB204450260190F30011AE9C /* LyricTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABE86BFC26040C3C0038009E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABE86BFD26040C4A0038009E /* ColorExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE86BF8260404120038009E /* File.swift in Sources */,
+				ABE86BFE26040C4A0038009E /* ColorExt.swift in Sources */,
 				AB20441926018D7E0011AE9C /* ContentView.swift in Sources */,
+				AB204451260190F30011AE9C /* LyricTextView.swift in Sources */,
 				AB20441726018D7E0011AE9C /* LyricRenderNativeApp.swift in Sources */,
+				AB20444C260190E00011AE9C /* Lyric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
