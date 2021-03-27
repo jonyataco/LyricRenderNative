@@ -12,13 +12,23 @@ struct LyricRenderNativeApp: App {
     @AppStorage("fontSize") var fontSize: Double = 50
     @AppStorage("backgroundColor") var backgroundColor: String = ""
     @AppStorage("lyricColor") var textColor: String = ""
+    @AppStorage("lyricAlignment") var lyricAlignment: String = "Center"
+    @AppStorage("lyricAnimation") var lyricAnimation: String = "Spring"
     
     @State private var bgColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     @State private var txtColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
+    @State private var duration: Double = 0.0
+    
 
     var body: some Scene {
         WindowGroup {
-            ContentView(backgroundColor: bgColor, textColor: txtColor)
+            ContentView(
+                backgroundColor: bgColor,
+                textColor: txtColor,
+                fontSize: fontSize,
+                lyricAlignment: Helper.alignment(lyricAlignment: lyricAlignment),
+                lyricAnimation: Helper.animation(lyricAnimation: lyricAnimation)
+            )
                 // Load from app storage into state
                 .onAppear {
                     if !backgroundColor.isEmpty {
@@ -51,7 +61,7 @@ struct LyricRenderNativeApp: App {
             
                 VStack(alignment: .leading) {
                 
-                    Slider(value: $fontSize, in: 5...96) {
+                    Slider(value: $fontSize, in: 5...180) {
                         Text("Font size \(fontSize, specifier: "%0.f") pts)")
                     }
                     
@@ -68,6 +78,18 @@ struct LyricRenderNativeApp: App {
                         textColor = updateColorInStorage(color: newValue)
                         txtColor = newValue
                     }))
+                    
+                    Picker("Lyric Alignment", selection: $lyricAlignment) {
+                        ForEach(LyricAlignment.allCases) {
+                            Text($0.rawValue).tag($0)
+                        }
+                    }
+                    
+                    Picker("Lyric Animation Type", selection: $lyricAnimation) {
+                        ForEach(LyricAnimation.allCases) {
+                            Text($0.rawValue).tag($0)
+                        }
+                    }
                 }
                 .padding(.horizontal, 100)
             }

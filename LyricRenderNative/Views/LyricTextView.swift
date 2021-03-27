@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct LyricTextView: View {
+/// View that represents a lyric on screen
+struct LyricTextView: View, Identifiable {
+    let id: UUID = UUID()
     let index: Int
     let opacity: Double
     let lyric: String
@@ -11,7 +13,7 @@ struct LyricTextView: View {
         Text(lyric)
             .foregroundColor(lyricColor)
             .font(Font.custom("Courier", size: fontSize))
-            .transition(.move(edge: .bottom))
+            .multilineTextAlignment(.center)
             .opacity(Double(index) / opacity)
             .onAppear {
                 print(index, opacity)
