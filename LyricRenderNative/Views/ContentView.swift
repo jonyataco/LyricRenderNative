@@ -14,6 +14,8 @@ struct ContentView: View {
     let lyricAlignment: HorizontalAlignment
     let lyricAnimation: Animation
     
+    @AppStorage(AppSettings.backgroundOpacity) var backgroundOpacity: Double = 1.0
+    
     @State var lyrics: [String] = []
     @State var currentLyric: String = ""
     @State var opacityValue: Double = 0
@@ -21,8 +23,8 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geoReader in
             ZStack {
-                // Sets the background color
-                backgroundColor.ignoresSafeArea()
+                // Sets the background color and opacity
+                backgroundColor.ignoresSafeArea().opacity(backgroundOpacity)
                 
                 VStack {
                     // The scroll view for the lyrics
@@ -63,6 +65,8 @@ struct ContentView: View {
                         )
                         Button("Clear lyrics") {
                             lyrics.removeAll()
+                            print("lyrics have been cleared")
+                            print(lyrics)
                         }
                     }
                 }
