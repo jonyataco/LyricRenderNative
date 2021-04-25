@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		AB20443526018D7E0011AE9C /* LyricRenderNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20443426018D7E0011AE9C /* LyricRenderNativeUITests.swift */; };
 		AB20444C260190E00011AE9C /* Lyric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB20444B260190E00011AE9C /* Lyric.swift */; };
 		AB204451260190F30011AE9C /* LyricTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB204450260190F30011AE9C /* LyricTextView.swift */; };
+		AB7FAEC72636296800CEBD39 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = AB7FAEC62636296800CEBD39 /* Introspect */; };
+		AB7FAED026362F2F00CEBD39 /* IntrospectSetFirstresponderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7FAECF26362F2F00CEBD39 /* IntrospectSetFirstresponderTextField.swift */; };
 		ABD58B4C26057E13009A5285 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD58B4B26057E13009A5285 /* Helper.swift */; };
 		ABD58B57260583EF009A5285 /* LyricAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD58B56260583EF009A5285 /* LyricAnimation.swift */; };
 		ABE86BF8260404120038009E /* LyricAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE86BF7260404120038009E /* LyricAlignment.swift */; };
@@ -55,6 +57,7 @@
 		AB20444626018FA70011AE9C /* COURIER.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = COURIER.TTF; sourceTree = "<group>"; };
 		AB20444B260190E00011AE9C /* Lyric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyric.swift; sourceTree = "<group>"; };
 		AB204450260190F30011AE9C /* LyricTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricTextView.swift; sourceTree = "<group>"; };
+		AB7FAECF26362F2F00CEBD39 /* IntrospectSetFirstresponderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrospectSetFirstresponderTextField.swift; sourceTree = "<group>"; };
 		ABD58B4B26057E13009A5285 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		ABD58B56260583EF009A5285 /* LyricAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricAnimation.swift; sourceTree = "<group>"; };
 		ABE86BF7260404120038009E /* LyricAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricAlignment.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7FAEC72636296800CEBD39 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +174,19 @@
 		AB204455260190F80011AE9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB7FAECB2636298000CEBD39 /* ViewModifiers */,
 				AB20441826018D7E0011AE9C /* ContentView.swift */,
 				AB204450260190F30011AE9C /* LyricTextView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AB7FAECB2636298000CEBD39 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AB7FAECF26362F2F00CEBD39 /* IntrospectSetFirstresponderTextField.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		ABD58B4A26057E06009A5285 /* Helpers */ = {
@@ -208,6 +221,9 @@
 			dependencies = (
 			);
 			name = LyricRenderNative;
+			packageProductDependencies = (
+				AB7FAEC62636296800CEBD39 /* Introspect */,
+			);
 			productName = LyricRenderNative;
 			productReference = AB20441326018D7E0011AE9C /* LyricRenderNative.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +295,9 @@
 				Base,
 			);
 			mainGroup = AB20440A26018D7D0011AE9C;
+			packageReferences = (
+				AB7FAEC52636296800CEBD39 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = AB20441426018D7E0011AE9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -324,6 +343,7 @@
 				ABE86BF8260404120038009E /* LyricAlignment.swift in Sources */,
 				ABD58B4C26057E13009A5285 /* Helper.swift in Sources */,
 				ABD58B57260583EF009A5285 /* LyricAnimation.swift in Sources */,
+				AB7FAED026362F2F00CEBD39 /* IntrospectSetFirstresponderTextField.swift in Sources */,
 				ABE86BFE26040C4A0038009E /* ColorExt.swift in Sources */,
 				AB20441926018D7E0011AE9C /* ContentView.swift in Sources */,
 				AB204451260190F30011AE9C /* LyricTextView.swift in Sources */,
@@ -651,6 +671,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB7FAEC52636296800CEBD39 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB7FAEC62636296800CEBD39 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB7FAEC52636296800CEBD39 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB20440B26018D7D0011AE9C /* Project object */;
 }
