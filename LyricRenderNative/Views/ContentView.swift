@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct ContentView: View {
     let backgroundColor: Color
@@ -16,7 +17,7 @@ struct ContentView: View {
     
     @AppStorage(AppSettings.backgroundOpacity) var backgroundOpacity: Double = 1.0
     
-    @State var lyrics: [String] = []
+    @State var lyrics: [String] = [""]
     @State var currentLyric: String = ""
     @State var opacityValue: Double = 0
     
@@ -54,19 +55,29 @@ struct ContentView: View {
                     HStack {
                         TextField(
                             "Enter your next lyrics",
-                            text: $currentLyric,
+                            text: $lyrics[lyrics.count - 1],
                             onCommit: {
                                 withAnimation(lyricAnimation) {
-                                    lyrics.append(currentLyric)
+                                    lyrics.append("")
                                     opacityValue = Double(lyrics.count)
-                                    currentLyric = ""
                                 }
                             }
                         )
+                        // Makes the text field invisible and makes it first responder. First responder means that it is focused automatically
+                        .opacity(0.0)
+                        .modifier(IntrospectSetFirstResponderTextField())
+                        
                         Button("Clear lyrics") {
-                            lyrics.removeAll()
-                            print("lyrics have been cleared")
-                            print(lyrics)
+                            // If the lyric count is equal to 1 then just make it an empty string
+                            if lyrics.count == 1 {
+                                lyrics[0] = ""
+                                return
+                            }
+                            
+                            // Remove all of the lyrics except the first one. Make the first one an empty string
+                            lyrics[0] = ""
+                            lyrics.removeLast(lyrics.count - 1)
+                            opacityValue = Double(lyrics.count)
                         }
                     }
                 }
