@@ -14,6 +14,7 @@ enum AppSettings {
     static let lyricAlignment = "lyricAlignment"
     static let lyricAnimation = "lyricAnimation"
     static let backgroundOpacity = "backgroundOpacity"
+    static let hideClearLyricsButton = "hideClearLyricsButton"
 }
 
 @main
@@ -26,6 +27,7 @@ struct LyricRenderNativeApp: App {
     @AppStorage(AppSettings.lyricAlignment) var lyricAlignment: String = "Center"
     @AppStorage(AppSettings.lyricAnimation) var lyricAnimation: String = "Spring"
     @AppStorage(AppSettings.backgroundOpacity) var backgroundOpacity: Double = 1.0
+    @AppStorage(AppSettings.hideClearLyricsButton) var hideClearLyrics: Bool = true
     
     @State private var bgColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     @State private var txtColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
@@ -106,6 +108,10 @@ struct LyricRenderNativeApp: App {
                             Text($0.rawValue).tag($0)
                         }
                     }
+                    
+                    Toggle(isOn: $hideClearLyrics, label: {
+                        Text("Hide the clear lyrics button")
+                    })
                 }
                 .padding(.horizontal, 100)
             }
@@ -136,6 +142,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Allows the window to be transparent
         window.isOpaque = false
-        window.backgroundColor = NSColor(red: 1, green: 1, blue: 1, alpha: 0.0)
+        window.hasShadow = false
+        window.backgroundColor = NSColor.clear
     }
 }
