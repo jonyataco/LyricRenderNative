@@ -64,7 +64,9 @@ struct ContentView: View {
                     )
                     // Makes the text field invisible and makes it first responder. First responder means that it is focused automatically
                     .opacity(0.0)
-                    .modifier(IntrospectSetFirstResponderTextField())
+                    .introspectTextField { textField in
+                        textField.becomeFirstResponder()
+                    }
                     
                     Button("Increase font") {
                         systemFontSize += 10

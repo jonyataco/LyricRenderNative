@@ -142,6 +142,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         
         // Allows the window to be transparent
         window.isOpaque = false
+        // NEED THIS OR ELSE FPS WILL BE LOW AS HELL
         window.hasShadow = false
         window.backgroundColor = NSColor.clear
     }
